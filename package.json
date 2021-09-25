@@ -1,0 +1,11 @@
+{
+  "name": "time-tracking-dashboard-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "json:server": "json-server --watch data.json"
+  },
+  "author": "",
+  "license": "ISC"
+}

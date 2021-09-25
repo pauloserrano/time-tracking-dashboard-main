@@ -1,0 +1,115 @@
+@import 'reset';
+
+// COLORS
+$primary-blue: hsl(246, 80%, 60%);
+$primary-violet: hsl(264, 64%, 52%); //social
+$light-orange: hsl(15, 100%, 70%); //work
+$light-red: hsl(348, 100%, 68%); //study
+$soft-blue: hsl(195, 74%, 62%); //play
+$soft-orange: hsl(43, 84%, 65%); //self-care
+$lime-green: hsl(145, 58%, 55%); //exercise
+
+
+// NEUTRAL COLORS
+$desaturated-blue: hsl(235, 45%, 61%);
+$very-dark-blue: hsl(226, 43%, 10%);
+$pale-blue: hsl(236, 100%, 87%);
+$dark-blue: hsl(235, 46%, 20%);
+
+
+// UTILITIES
+.dark-mode{
+    background-color: #111;
+    filter: invert(1) hue-rotate(180deg);
+}
+
+
+// MAIN
+body {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    background-color: $very-dark-blue;
+}
+
+.profile{
+    position: relative;
+    margin: 1rem;
+    
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: $primary-blue;
+        z-index: 3;
+
+        img {
+            width: 75px;
+            margin-right: 1rem;
+            border: 4px solid white;
+            border-radius: 50%;
+        }
+
+        p{
+            color: #bbb;
+            line-height: 1.5em;
+            font-size: 0.9rem;
+        }
+
+        h2{
+            color: white;
+            line-height: 1.5em;
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 1rem;
+        padding-top: 1rem;
+        border-radius: 0 0 1rem 1rem;
+        background-color: $dark-blue;
+        z-index: 1;
+
+        ul{
+            display: flex;
+            width: 100%;
+        }   
+
+        li{
+            text-align: center;
+            width: 100%;
+            padding: 1.5rem;
+        }
+
+        a{
+            width: 100%;
+            font-size: 1.1rem;
+            text-decoration: none;
+            color: $desaturated-blue;
+            transition: .2s color ease;
+        }
+
+        a:hover{
+            color: white;
+        }
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a{
+        color: hsl(228, 45%, 44%);
+    }
+}
